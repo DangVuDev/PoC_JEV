@@ -7,7 +7,7 @@ python benchmark_p1.py `
 
 python benchmark_p2.py `
 --service_platform openrouter `
---from_raw 6 `
---to_raw 10 `
---output_folder out `
---delay_s 1.5
+--from_raw 161 `
+--to_raw 180 `
+--output_folder p2_openrouter `
+--delay_s 1

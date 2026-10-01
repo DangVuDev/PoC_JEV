@@ -1,0 +1,616 @@
+{
+  "service_platform": "openrouter",
+  "csv": "D:\\AI\\JEV\\p2_performer_lane_poc_200_1.csv",
+  "from_raw": 131,
+  "to_raw": 140,
+  "count": 10,
+  "summary": {
+    "evidence": {
+      "scored": 10,
+      "correct": 9,
+      "accuracy": 0.9
+    },
+    "mixed_lanes": {
+      "scored": 10,
+      "correct": 10,
+      "accuracy": 1.0
+    },
+    "performer": {
+      "scored": 10,
+      "correct": 0,
+      "accuracy": 0.0
+    }
+  },
+  "samples": [
+    {
+      "raw_number": 131,
+      "sample_id": "T15-131",
+      "http_status": 200,
+      "fields": {
+        "performer": {
+          "predicted": "insufficient_evidence",
+          "expected": "merchant_app_server",
+          "correct": false,
+          "confidence": 0.894379
+        },
+        "evidence": {
+          "predicted": "verb",
+          "expected": "verb",
+          "correct": true,
+          "confidence": 0.615066
+        },
+        "mixed_lanes": {
+          "predicted": false,
+          "expected": false,
+          "correct": true,
+          "confidence": 0.89933807
+        }
+      },
+      "response": {
+        "model": "respan/span-01-lite-20260925",
+        "answers": {
+          "performer": {
+            "type": "choice",
+            "choice": "insufficient_evidence",
+            "probabilities": {
+              "merchant_app_client": 0.39643526,
+              "merchant_app_server": 0.21414398,
+              "insufficient_evidence": 0.894379
+            }
+          },
+          "evidence": {
+            "type": "choice",
+            "choice": "verb",
+            "probabilities": {
+              "object": 0.3245564,
+              "verb": 0.615066,
+              "context": 0.17793472
+            }
+          },
+          "mixed_lanes": {
+            "type": "noul",
+            "noul": 0.10066193
+          }
+        },
+        "usage": {
+          "input_tokens": 1550,
+          "output_tokens": 0,
+          "cost": 0
+        },
+        "id": "gen-dec-1790838357-5aogLLfZhJOa0bC8hCQQ",
+        "provider": "Respan"
+      }
+    },
+    {
+      "raw_number": 132,
+      "sample_id": "T15-132",
+      "http_status": 200,
+      "fields": {
+        "performer": {
+          "predicted": "insufficient_evidence",
+          "expected": "merchant_app_client",
+          "correct": false,
+          "confidence": 0.87266225
+        },
+        "evidence": {
+          "predicted": "verb",
+          "expected": "verb",
+          "correct": true,
+          "confidence": 0.8913786
+        },
+        "mixed_lanes": {
+          "predicted": false,
+          "expected": false,
+          "correct": true,
+          "confidence": 0.81037386
+        }
+      },
+      "response": {
+        "model": "respan/span-01-lite-20260925",
+        "answers": {
+          "performer": {
+            "type": "choice",
+            "choice": "insufficient_evidence",
+            "probabilities": {
+              "merchant_app_client": 0.3800616,
+              "merchant_app_server": 0.1630075,
+              "insufficient_evidence": 0.87266225
+            }
+          },
+          "evidence": {
+            "type": "choice",
+            "choice": "verb",
+            "probabilities": {
+              "object": 0.7346095,
+              "verb": 0.8913786,
+              "context": 0.15879591
+            }
+          },
+          "mixed_lanes": {
+            "type": "noul",
+            "noul": 0.18962614
+          }
+        },
+        "usage": {
+          "input_tokens": 1759,
+          "output_tokens": 0,
+          "cost": 0
+        },
+        "id": "gen-dec-1790838360-2J3sgkSqUtHQYC3L98xy",
+        "provider": "Respan"
+      }
+    },
+    {
+      "raw_number": 133,
+      "sample_id": "T15-133",
+      "http_status": 200,
+      "fields": {
+        "performer": {
+          "predicted": "insufficient_evidence",
+          "expected": "merchant_app_client",
+          "correct": false,
+          "confidence": 0.86666876
+        },
+        "evidence": {
+          "predicted": "object",
+          "expected": "verb",
+          "correct": false,
+          "confidence": 0.7670572
+        },
+        "mixed_lanes": {
+          "predicted": false,
+          "expected": false,
+          "correct": true,
+          "confidence": 0.907134496
+        }
+      },
+      "response": {
+        "model": "respan/span-01-lite-20260925",
+        "answers": {
+          "performer": {
+            "type": "choice",
+            "choice": "insufficient_evidence",
+            "probabilities": {
+              "merchant_app_client": 0.6491992,
+              "merchant_app_server": 0.38191813,
+              "insufficient_evidence": 0.86666876
+            }
+          },
+          "evidence": {
+            "type": "choice",
+            "choice": "object",
+            "probabilities": {
+              "object": 0.7670572,
+              "verb": 0.6940137,
+              "context": 0.15223002
+            }
+          },
+          "mixed_lanes": {
+            "type": "noul",
+            "noul": 0.092865504
+          }
+        },
+        "usage": {
+          "input_tokens": 1614,
+          "output_tokens": 0,
+          "cost": 0
+        },
+        "id": "gen-dec-1790838364-Su4FNheDlsmFiZgvnnOG",
+        "provider": "Respan"
+      }
+    },
+    {
+      "raw_number": 134,
+      "sample_id": "T15-134",
+      "http_status": 200,
+      "fields": {
+        "performer": {
+          "predicted": "insufficient_evidence",
+          "expected": "merchant_app_client",
+          "correct": false,
+          "confidence": 0.879568
+        },
+        "evidence": {
+          "predicted": "verb",
+          "expected": "verb",
+          "correct": true,
+          "confidence": 0.9063491
+        },
+        "mixed_lanes": {
+          "predicted": false,
+          "expected": false,
+          "correct": true,
+          "confidence": 0.8406445
+        }
+      },
+      "response": {
+        "model": "respan/span-01-lite-20260925",
+        "answers": {
+          "performer": {
+            "type": "choice",
+            "choice": "insufficient_evidence",
+            "probabilities": {
+              "merchant_app_client": 0.5813596,
+              "merchant_app_server": 0.24854794,
+              "insufficient_evidence": 0.879568
+            }
+          },
+          "evidence": {
+            "type": "choice",
+            "choice": "verb",
+            "probabilities": {
+              "object": 0.77436924,
+              "verb": 0.9063491,
+              "context": 0.19378452
+            }
+          },
+          "mixed_lanes": {
+            "type": "noul",
+            "noul": 0.1593555
+          }
+        },
+        "usage": {
+          "input_tokens": 1743,
+          "output_tokens": 0,
+          "cost": 0
+        },
+        "id": "gen-dec-1790838368-Ao26gEPE9zcVI07jYfnw",
+        "provider": "Respan"
+      }
+    },
+    {
+      "raw_number": 135,
+      "sample_id": "T15-135",
+      "http_status": 200,
+      "fields": {
+        "performer": {
+          "predicted": "insufficient_evidence",
+          "expected": "merchant_app_client",
+          "correct": false,
+          "confidence": 0.8700492
+        },
+        "evidence": {
+          "predicted": "verb",
+          "expected": "verb",
+          "correct": true,
+          "confidence": 0.771367
+        },
+        "mixed_lanes": {
+          "predicted": false,
+          "expected": false,
+          "correct": true,
+          "confidence": 0.87489334
+        }
+      },
+      "response": {
+        "model": "respan/span-01-lite-20260925",
+        "answers": {
+          "performer": {
+            "type": "choice",
+            "choice": "insufficient_evidence",
+            "probabilities": {
+              "merchant_app_client": 0.3324771,
+              "merchant_app_server": 0.18007737,
+              "insufficient_evidence": 0.8700492
+            }
+          },
+          "evidence": {
+            "type": "choice",
+            "choice": "verb",
+            "probabilities": {
+              "object": 0.75937694,
+              "verb": 0.771367,
+              "context": 0.09819304
+            }
+          },
+          "mixed_lanes": {
+            "type": "noul",
+            "noul": 0.12510666
+          }
+        },
+        "usage": {
+          "input_tokens": 1582,
+          "output_tokens": 0,
+          "cost": 0
+        },
+        "id": "gen-dec-1790838372-tGUPTZFB3t5cEVh42YaG",
+        "provider": "Respan"
+      }
+    },
+    {
+      "raw_number": 136,
+      "sample_id": "T15-136",
+      "http_status": 200,
+      "fields": {
+        "performer": {
+          "predicted": "insufficient_evidence",
+          "expected": "merchant_app_client",
+          "correct": false,
+          "confidence": 0.858205
+        },
+        "evidence": {
+          "predicted": "verb",
+          "expected": "verb",
+          "correct": true,
+          "confidence": 0.7444229
+        },
+        "mixed_lanes": {
+          "predicted": false,
+          "expected": false,
+          "correct": true,
+          "confidence": 0.929871686
+        }
+      },
+      "response": {
+        "model": "respan/span-01-lite-20260925",
+        "answers": {
+          "performer": {
+            "type": "choice",
+            "choice": "insufficient_evidence",
+            "probabilities": {
+              "merchant_app_client": 0.4291123,
+              "merchant_app_server": 0.09436761,
+              "insufficient_evidence": 0.858205
+            }
+          },
+          "evidence": {
+            "type": "choice",
+            "choice": "verb",
+            "probabilities": {
+              "object": 0.617819,
+              "verb": 0.7444229,
+              "context": 0.19654305
+            }
+          },
+          "mixed_lanes": {
+            "type": "noul",
+            "noul": 0.070128314
+          }
+        },
+        "usage": {
+          "input_tokens": 1532,
+          "output_tokens": 0,
+          "cost": 0
+        },
+        "id": "gen-dec-1790838376-KDMotJCgGsb6UJYE45nK",
+        "provider": "Respan"
+      }
+    },
+    {
+      "raw_number": 137,
+      "sample_id": "T15-137",
+      "http_status": 200,
+      "fields": {
+        "performer": {
+          "predicted": "insufficient_evidence",
+          "expected": "merchant_app_client",
+          "correct": false,
+          "confidence": 0.8479713
+        },
+        "evidence": {
+          "predicted": "verb",
+          "expected": "verb",
+          "correct": true,
+          "confidence": 0.66439986
+        },
+        "mixed_lanes": {
+          "predicted": false,
+          "expected": false,
+          "correct": true,
+          "confidence": 0.94285957
+        }
+      },
+      "response": {
+        "model": "respan/span-01-lite-20260925",
+        "answers": {
+          "performer": {
+            "type": "choice",
+            "choice": "insufficient_evidence",
+            "probabilities": {
+              "merchant_app_client": 0.41024905,
+              "merchant_app_server": 0.11500988,
+              "insufficient_evidence": 0.8479713
+            }
+          },
+          "evidence": {
+            "type": "choice",
+            "choice": "verb",
+            "probabilities": {
+              "object": 0.5864907,
+              "verb": 0.66439986,
+              "context": 0.14778176
+            }
+          },
+          "mixed_lanes": {
+            "type": "noul",
+            "noul": 0.05714043
+          }
+        },
+        "usage": {
+          "input_tokens": 1506,
+          "output_tokens": 0,
+          "cost": 0
+        },
+        "id": "gen-dec-1790838380-5hyBrQ3c3P56HlZTNGTV",
+        "provider": "Respan"
+      }
+    },
+    {
+      "raw_number": 138,
+      "sample_id": "T15-138",
+      "http_status": 200,
+      "fields": {
+        "performer": {
+          "predicted": "insufficient_evidence",
+          "expected": "merchant_app_client",
+          "correct": false,
+          "confidence": 0.87714785
+        },
+        "evidence": {
+          "predicted": "verb",
+          "expected": "verb",
+          "correct": true,
+          "confidence": 0.62808645
+        },
+        "mixed_lanes": {
+          "predicted": false,
+          "expected": false,
+          "correct": true,
+          "confidence": 0.86481464
+        }
+      },
+      "response": {
+        "model": "respan/span-01-lite-20260925",
+        "answers": {
+          "performer": {
+            "type": "choice",
+            "choice": "insufficient_evidence",
+            "probabilities": {
+              "merchant_app_client": 0.48196504,
+              "merchant_app_server": 0.13187042,
+              "insufficient_evidence": 0.87714785
+            }
+          },
+          "evidence": {
+            "type": "choice",
+            "choice": "verb",
+            "probabilities": {
+              "object": 0.53268504,
+              "verb": 0.62808645,
+              "context": 0.1942611
+            }
+          },
+          "mixed_lanes": {
+            "type": "noul",
+            "noul": 0.13518536
+          }
+        },
+        "usage": {
+          "input_tokens": 1551,
+          "output_tokens": 0,
+          "cost": 0
+        },
+        "id": "gen-dec-1790838384-BDdrxSBMPMrWDXfhtqqu",
+        "provider": "Respan"
+      }
+    },
+    {
+      "raw_number": 139,
+      "sample_id": "T15-139",
+      "http_status": 200,
+      "fields": {
+        "performer": {
+          "predicted": "insufficient_evidence",
+          "expected": "merchant_app_client",
+          "correct": false,
+          "confidence": 0.8524712
+        },
+        "evidence": {
+          "predicted": "verb",
+          "expected": "verb",
+          "correct": true,
+          "confidence": 0.70230526
+        },
+        "mixed_lanes": {
+          "predicted": false,
+          "expected": false,
+          "correct": true,
+          "confidence": 0.92890777
+        }
+      },
+      "response": {
+        "model": "respan/span-01-lite-20260925",
+        "answers": {
+          "performer": {
+            "type": "choice",
+            "choice": "insufficient_evidence",
+            "probabilities": {
+              "merchant_app_client": 0.37314647,
+              "merchant_app_server": 0.090950675,
+              "insufficient_evidence": 0.8524712
+            }
+          },
+          "evidence": {
+            "type": "choice",
+            "choice": "verb",
+            "probabilities": {
+              "object": 0.5896684,
+              "verb": 0.70230526,
+              "context": 0.14467768
+            }
+          },
+          "mixed_lanes": {
+            "type": "noul",
+            "noul": 0.07109223
+          }
+        },
+        "usage": {
+          "input_tokens": 1536,
+          "output_tokens": 0,
+          "cost": 0
+        },
+        "id": "gen-dec-1790838388-tzkjOozC9kY5ApabyjdF",
+        "provider": "Respan"
+      }
+    },
+    {
+      "raw_number": 140,
+      "sample_id": "T15-140",
+      "http_status": 200,
+      "fields": {
+        "performer": {
+          "predicted": "insufficient_evidence",
+          "expected": "merchant_app_client",
+          "correct": false,
+          "confidence": 0.83708686
+        },
+        "evidence": {
+          "predicted": "verb",
+          "expected": "verb",
+          "correct": true,
+          "confidence": 0.65563047
+        },
+        "mixed_lanes": {
+          "predicted": false,
+          "expected": false,
+          "correct": true,
+          "confidence": 0.939834032
+        }
+      },
+      "response": {
+        "model": "respan/span-01-lite-20260925",
+        "answers": {
+          "performer": {
+            "type": "choice",
+            "choice": "insufficient_evidence",
+            "probabilities": {
+              "merchant_app_client": 0.31566828,
+              "merchant_app_server": 0.10337877,
+              "insufficient_evidence": 0.83708686
+            }
+          },
+          "evidence": {
+            "type": "choice",
+            "choice": "verb",
+            "probabilities": {
+              "object": 0.47114158,
+              "verb": 0.65563047,
+              "context": 0.15269342
+            }
+          },
+          "mixed_lanes": {
+            "type": "noul",
+            "noul": 0.060165968
+          }
+        },
+        "usage": {
+          "input_tokens": 1510,
+          "output_tokens": 0,
+          "cost": 0
+        },
+        "id": "gen-dec-1790838392-xUPIzjbwpF8ZbansbFxa",
+        "provider": "Respan"
+      }
+    }
+  ]
+}

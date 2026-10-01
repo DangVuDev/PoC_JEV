@@ -1,0 +1,1206 @@
+{
+  "service_platform": "openrouter",
+  "csv": "D:\\AI\\JEV\\p2_performer_lane_poc_200_1.csv",
+  "from_raw": 141,
+  "to_raw": 160,
+  "count": 20,
+  "summary": {
+    "evidence": {
+      "scored": 20,
+      "correct": 9,
+      "accuracy": 0.45
+    },
+    "mixed_lanes": {
+      "scored": 20,
+      "correct": 17,
+      "accuracy": 0.85
+    },
+    "performer": {
+      "scored": 20,
+      "correct": 0,
+      "accuracy": 0.0
+    }
+  },
+  "samples": [
+    {
+      "raw_number": 141,
+      "sample_id": "T15-141",
+      "http_status": 200,
+      "fields": {
+        "performer": {
+          "predicted": "insufficient_evidence",
+          "expected": "merchant_app_client",
+          "correct": false,
+          "confidence": 0.8706099
+        },
+        "evidence": {
+          "predicted": "verb",
+          "expected": "verb",
+          "correct": true,
+          "confidence": 0.6197036
+        },
+        "mixed_lanes": {
+          "predicted": false,
+          "expected": false,
+          "correct": true,
+          "confidence": 0.91311247
+        }
+      },
+      "response": {
+        "model": "respan/span-01-lite-20260925",
+        "answers": {
+          "performer": {
+            "type": "choice",
+            "choice": "insufficient_evidence",
+            "probabilities": {
+              "merchant_app_client": 0.3827028,
+              "merchant_app_server": 0.121863656,
+              "insufficient_evidence": 0.8706099
+            }
+          },
+          "evidence": {
+            "type": "choice",
+            "choice": "verb",
+            "probabilities": {
+              "object": 0.54094344,
+              "verb": 0.6197036,
+              "context": 0.15776381
+            }
+          },
+          "mixed_lanes": {
+            "type": "noul",
+            "noul": 0.08688753
+          }
+        },
+        "usage": {
+          "input_tokens": 1557,
+          "output_tokens": 0,
+          "cost": 0
+        },
+        "id": "gen-dec-1790839211-0kFME66dd7vlBQ0V9Enk",
+        "provider": "Respan"
+      }
+    },
+    {
+      "raw_number": 142,
+      "sample_id": "T15-142",
+      "http_status": 200,
+      "fields": {
+        "performer": {
+          "predicted": "insufficient_evidence",
+          "expected": "merchant_app_client",
+          "correct": false,
+          "confidence": 0.889372
+        },
+        "evidence": {
+          "predicted": "verb",
+          "expected": "verb",
+          "correct": true,
+          "confidence": 0.53371227
+        },
+        "mixed_lanes": {
+          "predicted": false,
+          "expected": false,
+          "correct": true,
+          "confidence": 0.92532927
+        }
+      },
+      "response": {
+        "model": "respan/span-01-lite-20260925",
+        "answers": {
+          "performer": {
+            "type": "choice",
+            "choice": "insufficient_evidence",
+            "probabilities": {
+              "merchant_app_client": 0.30878097,
+              "merchant_app_server": 0.24599169,
+              "insufficient_evidence": 0.889372
+            }
+          },
+          "evidence": {
+            "type": "choice",
+            "choice": "verb",
+            "probabilities": {
+              "object": 0.5179316,
+              "verb": 0.53371227,
+              "context": 0.12611052
+            }
+          },
+          "mixed_lanes": {
+            "type": "noul",
+            "noul": 0.07467073
+          }
+        },
+        "usage": {
+          "input_tokens": 1518,
+          "output_tokens": 0,
+          "cost": 0
+        },
+        "id": "gen-dec-1790839215-F5dgqFRHlfZLa42fQOaV",
+        "provider": "Respan"
+      }
+    },
+    {
+      "raw_number": 143,
+      "sample_id": "T15-143",
+      "http_status": 200,
+      "fields": {
+        "performer": {
+          "predicted": "insufficient_evidence",
+          "expected": "merchant_app_server",
+          "correct": false,
+          "confidence": 0.8764587
+        },
+        "evidence": {
+          "predicted": "verb",
+          "expected": "verb",
+          "correct": true,
+          "confidence": 0.7127809
+        },
+        "mixed_lanes": {
+          "predicted": true,
+          "expected": true,
+          "correct": true,
+          "confidence": 0.6793596
+        }
+      },
+      "response": {
+        "model": "respan/span-01-lite-20260925",
+        "answers": {
+          "performer": {
+            "type": "choice",
+            "choice": "insufficient_evidence",
+            "probabilities": {
+              "merchant_app_client": 0.32383263,
+              "merchant_app_server": 0.13809334,
+              "insufficient_evidence": 0.8764587
+            }
+          },
+          "evidence": {
+            "type": "choice",
+            "choice": "verb",
+            "probabilities": {
+              "object": 0.5325767,
+              "verb": 0.7127809,
+              "context": 0.12835279
+            }
+          },
+          "mixed_lanes": {
+            "type": "noul",
+            "noul": 0.6793596
+          }
+        },
+        "usage": {
+          "input_tokens": 1580,
+          "output_tokens": 0,
+          "cost": 0
+        },
+        "id": "gen-dec-1790839219-y4fxlFxzrl4ecmaRs2sw",
+        "provider": "Respan"
+      }
+    },
+    {
+      "raw_number": 144,
+      "sample_id": "T15-144",
+      "http_status": 200,
+      "fields": {
+        "performer": {
+          "predicted": "insufficient_evidence",
+          "expected": "merchant_app_server",
+          "correct": false,
+          "confidence": 0.8741648
+        },
+        "evidence": {
+          "predicted": "verb",
+          "expected": "verb",
+          "correct": true,
+          "confidence": 0.6961891
+        },
+        "mixed_lanes": {
+          "predicted": true,
+          "expected": true,
+          "correct": true,
+          "confidence": 0.5346014
+        }
+      },
+      "response": {
+        "model": "respan/span-01-lite-20260925",
+        "answers": {
+          "performer": {
+            "type": "choice",
+            "choice": "insufficient_evidence",
+            "probabilities": {
+              "merchant_app_client": 0.4653499,
+              "merchant_app_server": 0.16732462,
+              "insufficient_evidence": 0.8741648
+            }
+          },
+          "evidence": {
+            "type": "choice",
+            "choice": "verb",
+            "probabilities": {
+              "object": 0.5636616,
+              "verb": 0.6961891,
+              "context": 0.13199645
+            }
+          },
+          "mixed_lanes": {
+            "type": "noul",
+            "noul": 0.5346014
+          }
+        },
+        "usage": {
+          "input_tokens": 1630,
+          "output_tokens": 0,
+          "cost": 0
+        },
+        "id": "gen-dec-1790839223-OhG17ONVo4pUKLVm6Nj2",
+        "provider": "Respan"
+      }
+    },
+    {
+      "raw_number": 145,
+      "sample_id": "T15-145",
+      "http_status": 200,
+      "fields": {
+        "performer": {
+          "predicted": "insufficient_evidence",
+          "expected": "merchant_app_client",
+          "correct": false,
+          "confidence": 0.8497142
+        },
+        "evidence": {
+          "predicted": "object",
+          "expected": "verb",
+          "correct": false,
+          "confidence": 0.841462
+        },
+        "mixed_lanes": {
+          "predicted": false,
+          "expected": false,
+          "correct": true,
+          "confidence": 0.7242257599999999
+        }
+      },
+      "response": {
+        "model": "respan/span-01-lite-20260925",
+        "answers": {
+          "performer": {
+            "type": "choice",
+            "choice": "insufficient_evidence",
+            "probabilities": {
+              "merchant_app_client": 0.4031162,
+              "merchant_app_server": 0.08733953,
+              "insufficient_evidence": 0.8497142
+            }
+          },
+          "evidence": {
+            "type": "choice",
+            "choice": "object",
+            "probabilities": {
+              "object": 0.841462,
+              "verb": 0.7345986,
+              "context": 0.20746885
+            }
+          },
+          "mixed_lanes": {
+            "type": "noul",
+            "noul": 0.27577424
+          }
+        },
+        "usage": {
+          "input_tokens": 1612,
+          "output_tokens": 0,
+          "cost": 0
+        },
+        "id": "gen-dec-1790839227-9gnaKedh9JEyLu3mgB8q",
+        "provider": "Respan"
+      }
+    },
+    {
+      "raw_number": 146,
+      "sample_id": "T15-146",
+      "http_status": 200,
+      "fields": {
+        "performer": {
+          "predicted": "insufficient_evidence",
+          "expected": "merchant_app_client",
+          "correct": false,
+          "confidence": 0.88045317
+        },
+        "evidence": {
+          "predicted": "object",
+          "expected": "verb",
+          "correct": false,
+          "confidence": 0.8068301
+        },
+        "mixed_lanes": {
+          "predicted": false,
+          "expected": false,
+          "correct": true,
+          "confidence": 0.94346738
+        }
+      },
+      "response": {
+        "model": "respan/span-01-lite-20260925",
+        "answers": {
+          "performer": {
+            "type": "choice",
+            "choice": "insufficient_evidence",
+            "probabilities": {
+              "merchant_app_client": 0.46484044,
+              "merchant_app_server": 0.08755853,
+              "insufficient_evidence": 0.88045317
+            }
+          },
+          "evidence": {
+            "type": "choice",
+            "choice": "object",
+            "probabilities": {
+              "object": 0.8068301,
+              "verb": 0.63891226,
+              "context": 0.21805374
+            }
+          },
+          "mixed_lanes": {
+            "type": "noul",
+            "noul": 0.05653262
+          }
+        },
+        "usage": {
+          "input_tokens": 1533,
+          "output_tokens": 0,
+          "cost": 0
+        },
+        "id": "gen-dec-1790839231-TINCO5AFMfwhUWcE2Kh7",
+        "provider": "Respan"
+      }
+    },
+    {
+      "raw_number": 147,
+      "sample_id": "T15-147",
+      "http_status": 200,
+      "fields": {
+        "performer": {
+          "predicted": "insufficient_evidence",
+          "expected": "merchant_app_client",
+          "correct": false,
+          "confidence": 0.8523273
+        },
+        "evidence": {
+          "predicted": "object",
+          "expected": "verb",
+          "correct": false,
+          "confidence": 0.8473603
+        },
+        "mixed_lanes": {
+          "predicted": false,
+          "expected": true,
+          "correct": false,
+          "confidence": 0.7322417800000001
+        }
+      },
+      "response": {
+        "model": "respan/span-01-lite-20260925",
+        "answers": {
+          "performer": {
+            "type": "choice",
+            "choice": "insufficient_evidence",
+            "probabilities": {
+              "merchant_app_client": 0.39212242,
+              "merchant_app_server": 0.12695843,
+              "insufficient_evidence": 0.8523273
+            }
+          },
+          "evidence": {
+            "type": "choice",
+            "choice": "object",
+            "probabilities": {
+              "object": 0.8473603,
+              "verb": 0.7663639,
+              "context": 0.20406269
+            }
+          },
+          "mixed_lanes": {
+            "type": "noul",
+            "noul": 0.26775822
+          }
+        },
+        "usage": {
+          "input_tokens": 1618,
+          "output_tokens": 0,
+          "cost": 0
+        },
+        "id": "gen-dec-1790839235-gdfbfKdhEn4PdDDVA4k5",
+        "provider": "Respan"
+      }
+    },
+    {
+      "raw_number": 148,
+      "sample_id": "T15-148",
+      "http_status": 200,
+      "fields": {
+        "performer": {
+          "predicted": "insufficient_evidence",
+          "expected": "merchant_app_client",
+          "correct": false,
+          "confidence": 0.8625912
+        },
+        "evidence": {
+          "predicted": "object",
+          "expected": "verb",
+          "correct": false,
+          "confidence": 0.8333202
+        },
+        "mixed_lanes": {
+          "predicted": false,
+          "expected": true,
+          "correct": false,
+          "confidence": 0.728862
+        }
+      },
+      "response": {
+        "model": "respan/span-01-lite-20260925",
+        "answers": {
+          "performer": {
+            "type": "choice",
+            "choice": "insufficient_evidence",
+            "probabilities": {
+              "merchant_app_client": 0.4330309,
+              "merchant_app_server": 0.13681196,
+              "insufficient_evidence": 0.8625912
+            }
+          },
+          "evidence": {
+            "type": "choice",
+            "choice": "object",
+            "probabilities": {
+              "object": 0.8333202,
+              "verb": 0.8202146,
+              "context": 0.17915088
+            }
+          },
+          "mixed_lanes": {
+            "type": "noul",
+            "noul": 0.271138
+          }
+        },
+        "usage": {
+          "input_tokens": 1685,
+          "output_tokens": 0,
+          "cost": 0
+        },
+        "id": "gen-dec-1790839239-SEcQcVjeRaHidDlVkcZd",
+        "provider": "Respan"
+      }
+    },
+    {
+      "raw_number": 149,
+      "sample_id": "T15-149",
+      "http_status": 200,
+      "fields": {
+        "performer": {
+          "predicted": "insufficient_evidence",
+          "expected": "merchant_app_server",
+          "correct": false,
+          "confidence": 0.8668288
+        },
+        "evidence": {
+          "predicted": "verb",
+          "expected": "verb",
+          "correct": true,
+          "confidence": 0.65128785
+        },
+        "mixed_lanes": {
+          "predicted": true,
+          "expected": true,
+          "correct": true,
+          "confidence": 0.9153125
+        }
+      },
+      "response": {
+        "model": "respan/span-01-lite-20260925",
+        "answers": {
+          "performer": {
+            "type": "choice",
+            "choice": "insufficient_evidence",
+            "probabilities": {
+              "merchant_app_client": 0.2760898,
+              "merchant_app_server": 0.21609834,
+              "insufficient_evidence": 0.8668288
+            }
+          },
+          "evidence": {
+            "type": "choice",
+            "choice": "verb",
+            "probabilities": {
+              "object": 0.49875838,
+              "verb": 0.65128785,
+              "context": 0.20119375
+            }
+          },
+          "mixed_lanes": {
+            "type": "noul",
+            "noul": 0.9153125
+          }
+        },
+        "usage": {
+          "input_tokens": 1663,
+          "output_tokens": 0,
+          "cost": 0
+        },
+        "id": "gen-dec-1790839243-FmhelSEZ9RZtQmR4csTg",
+        "provider": "Respan"
+      }
+    },
+    {
+      "raw_number": 150,
+      "sample_id": "T15-150",
+      "http_status": 200,
+      "fields": {
+        "performer": {
+          "predicted": "insufficient_evidence",
+          "expected": "vcb_server",
+          "correct": false,
+          "confidence": 0.89448404
+        },
+        "evidence": {
+          "predicted": "verb",
+          "expected": "verb",
+          "correct": true,
+          "confidence": 0.47504508
+        },
+        "mixed_lanes": {
+          "predicted": true,
+          "expected": true,
+          "correct": true,
+          "confidence": 0.8055508
+        }
+      },
+      "response": {
+        "model": "respan/span-01-lite-20260925",
+        "answers": {
+          "performer": {
+            "type": "choice",
+            "choice": "insufficient_evidence",
+            "probabilities": {
+              "vcb_mobile": 0.10932356,
+              "vcb_server": 0.07508735,
+              "insufficient_evidence": 0.89448404
+            }
+          },
+          "evidence": {
+            "type": "choice",
+            "choice": "verb",
+            "probabilities": {
+              "object": 0.3012038,
+              "verb": 0.47504508,
+              "context": 0.13886087
+            }
+          },
+          "mixed_lanes": {
+            "type": "noul",
+            "noul": 0.8055508
+          }
+        },
+        "usage": {
+          "input_tokens": 1589,
+          "output_tokens": 0,
+          "cost": 0
+        },
+        "id": "gen-dec-1790839247-dDnwnXOCais9tjAWcB1F",
+        "provider": "Respan"
+      }
+    },
+    {
+      "raw_number": 151,
+      "sample_id": "T15-151",
+      "http_status": 200,
+      "fields": {
+        "performer": {
+          "predicted": "insufficient_evidence",
+          "expected": "vcb_mobile",
+          "correct": false,
+          "confidence": 0.8654302
+        },
+        "evidence": {
+          "predicted": "object",
+          "expected": "verb",
+          "correct": false,
+          "confidence": 0.7771507
+        },
+        "mixed_lanes": {
+          "predicted": false,
+          "expected": false,
+          "correct": true,
+          "confidence": 0.90514405
+        }
+      },
+      "response": {
+        "model": "respan/span-01-lite-20260925",
+        "answers": {
+          "performer": {
+            "type": "choice",
+            "choice": "insufficient_evidence",
+            "probabilities": {
+              "vcb_mobile": 0.41978192,
+              "vcb_server": 0.08204483,
+              "insufficient_evidence": 0.8654302
+            }
+          },
+          "evidence": {
+            "type": "choice",
+            "choice": "object",
+            "probabilities": {
+              "object": 0.7771507,
+              "verb": 0.44248208,
+              "context": 0.1561507
+            }
+          },
+          "mixed_lanes": {
+            "type": "noul",
+            "noul": 0.09485595
+          }
+        },
+        "usage": {
+          "input_tokens": 1551,
+          "output_tokens": 0,
+          "cost": 0
+        },
+        "id": "gen-dec-1790839251-60674S5IavdMhpSaK8x5",
+        "provider": "Respan"
+      }
+    },
+    {
+      "raw_number": 152,
+      "sample_id": "T15-152",
+      "http_status": 200,
+      "fields": {
+        "performer": {
+          "predicted": "insufficient_evidence",
+          "expected": "vcb_mobile",
+          "correct": false,
+          "confidence": 0.8519611
+        },
+        "evidence": {
+          "predicted": "object",
+          "expected": "verb",
+          "correct": false,
+          "confidence": 0.82889736
+        },
+        "mixed_lanes": {
+          "predicted": false,
+          "expected": false,
+          "correct": true,
+          "confidence": 0.90442927
+        }
+      },
+      "response": {
+        "model": "respan/span-01-lite-20260925",
+        "answers": {
+          "performer": {
+            "type": "choice",
+            "choice": "insufficient_evidence",
+            "probabilities": {
+              "vcb_mobile": 0.4898316,
+              "vcb_server": 0.0980166,
+              "insufficient_evidence": 0.8519611
+            }
+          },
+          "evidence": {
+            "type": "choice",
+            "choice": "object",
+            "probabilities": {
+              "object": 0.82889736,
+              "verb": 0.55907863,
+              "context": 0.16444698
+            }
+          },
+          "mixed_lanes": {
+            "type": "noul",
+            "noul": 0.09557073
+          }
+        },
+        "usage": {
+          "input_tokens": 1586,
+          "output_tokens": 0,
+          "cost": 0
+        },
+        "id": "gen-dec-1790839255-CHoQMm6wSbxxRXk6uOo6",
+        "provider": "Respan"
+      }
+    },
+    {
+      "raw_number": 153,
+      "sample_id": "T15-153",
+      "http_status": 200,
+      "fields": {
+        "performer": {
+          "predicted": "insufficient_evidence",
+          "expected": "vcb_mobile",
+          "correct": false,
+          "confidence": 0.88394856
+        },
+        "evidence": {
+          "predicted": "object",
+          "expected": "verb",
+          "correct": false,
+          "confidence": 0.61543447
+        },
+        "mixed_lanes": {
+          "predicted": false,
+          "expected": false,
+          "correct": true,
+          "confidence": 0.91978702
+        }
+      },
+      "response": {
+        "model": "respan/span-01-lite-20260925",
+        "answers": {
+          "performer": {
+            "type": "choice",
+            "choice": "insufficient_evidence",
+            "probabilities": {
+              "vcb_mobile": 0.34256795,
+              "vcb_server": 0.090620086,
+              "insufficient_evidence": 0.88394856
+            }
+          },
+          "evidence": {
+            "type": "choice",
+            "choice": "object",
+            "probabilities": {
+              "object": 0.61543447,
+              "verb": 0.46756917,
+              "context": 0.14782836
+            }
+          },
+          "mixed_lanes": {
+            "type": "noul",
+            "noul": 0.08021298
+          }
+        },
+        "usage": {
+          "input_tokens": 1543,
+          "output_tokens": 0,
+          "cost": 0
+        },
+        "id": "gen-dec-1790839259-AMciEnZ9BkhmRirYnarJ",
+        "provider": "Respan"
+      }
+    },
+    {
+      "raw_number": 154,
+      "sample_id": "T15-154",
+      "http_status": 200,
+      "fields": {
+        "performer": {
+          "predicted": "insufficient_evidence",
+          "expected": "vcb_mobile",
+          "correct": false,
+          "confidence": 0.85138404
+        },
+        "evidence": {
+          "predicted": "object",
+          "expected": "verb",
+          "correct": false,
+          "confidence": 0.5984759
+        },
+        "mixed_lanes": {
+          "predicted": false,
+          "expected": false,
+          "correct": true,
+          "confidence": 0.80775125
+        }
+      },
+      "response": {
+        "model": "respan/span-01-lite-20260925",
+        "answers": {
+          "performer": {
+            "type": "choice",
+            "choice": "insufficient_evidence",
+            "probabilities": {
+              "vcb_mobile": 0.37198713,
+              "vcb_server": 0.086204745,
+              "insufficient_evidence": 0.85138404
+            }
+          },
+          "evidence": {
+            "type": "choice",
+            "choice": "object",
+            "probabilities": {
+              "object": 0.5984759,
+              "verb": 0.5239895,
+              "context": 0.13696279
+            }
+          },
+          "mixed_lanes": {
+            "type": "noul",
+            "noul": 0.19224875
+          }
+        },
+        "usage": {
+          "input_tokens": 1562,
+          "output_tokens": 0,
+          "cost": 0
+        },
+        "id": "gen-dec-1790839263-VIK2ljqbSpTzawgvWwny",
+        "provider": "Respan"
+      }
+    },
+    {
+      "raw_number": 155,
+      "sample_id": "T15-155",
+      "http_status": 200,
+      "fields": {
+        "performer": {
+          "predicted": "insufficient_evidence",
+          "expected": "pmkt_frontend",
+          "correct": false,
+          "confidence": 0.862677
+        },
+        "evidence": {
+          "predicted": "verb",
+          "expected": "verb",
+          "correct": true,
+          "confidence": 0.7048851
+        },
+        "mixed_lanes": {
+          "predicted": true,
+          "expected": false,
+          "correct": false,
+          "confidence": 0.9192845
+        }
+      },
+      "response": {
+        "model": "respan/span-01-lite-20260925",
+        "answers": {
+          "performer": {
+            "type": "choice",
+            "choice": "insufficient_evidence",
+            "probabilities": {
+              "pmkt_frontend": 0.43871903,
+              "pmkt_core": 0.64029056,
+              "insufficient_evidence": 0.862677
+            }
+          },
+          "evidence": {
+            "type": "choice",
+            "choice": "verb",
+            "probabilities": {
+              "object": 0.39177343,
+              "verb": 0.7048851,
+              "context": 0.11785082
+            }
+          },
+          "mixed_lanes": {
+            "type": "noul",
+            "noul": 0.9192845
+          }
+        },
+        "usage": {
+          "input_tokens": 1613,
+          "output_tokens": 0,
+          "cost": 0
+        },
+        "id": "gen-dec-1790839267-g7EfYpUz2x5BI2BuLnE4",
+        "provider": "Respan"
+      }
+    },
+    {
+      "raw_number": 156,
+      "sample_id": "T15-156",
+      "http_status": 200,
+      "fields": {
+        "performer": {
+          "predicted": "insufficient_evidence",
+          "expected": "pmkt_frontend",
+          "correct": false,
+          "confidence": 0.88360626
+        },
+        "evidence": {
+          "predicted": "verb",
+          "expected": "verb",
+          "correct": true,
+          "confidence": 0.66085345
+        },
+        "mixed_lanes": {
+          "predicted": false,
+          "expected": false,
+          "correct": true,
+          "confidence": 0.897359714
+        }
+      },
+      "response": {
+        "model": "respan/span-01-lite-20260925",
+        "answers": {
+          "performer": {
+            "type": "choice",
+            "choice": "insufficient_evidence",
+            "probabilities": {
+              "pmkt_frontend": 0.27667722,
+              "pmkt_core": 0.25018305,
+              "insufficient_evidence": 0.88360626
+            }
+          },
+          "evidence": {
+            "type": "choice",
+            "choice": "verb",
+            "probabilities": {
+              "object": 0.2966986,
+              "verb": 0.66085345,
+              "context": 0.102943525
+            }
+          },
+          "mixed_lanes": {
+            "type": "noul",
+            "noul": 0.102640286
+          }
+        },
+        "usage": {
+          "input_tokens": 1571,
+          "output_tokens": 0,
+          "cost": 0
+        },
+        "id": "gen-dec-1790839271-fgbCZFan1K7qNjjGRPT3",
+        "provider": "Respan"
+      }
+    },
+    {
+      "raw_number": 157,
+      "sample_id": "T15-157",
+      "http_status": 200,
+      "fields": {
+        "performer": {
+          "predicted": "insufficient_evidence",
+          "expected": "pmkt_frontend",
+          "correct": false,
+          "confidence": 0.8651335
+        },
+        "evidence": {
+          "predicted": "verb",
+          "expected": "verb",
+          "correct": true,
+          "confidence": 0.62345356
+        },
+        "mixed_lanes": {
+          "predicted": true,
+          "expected": true,
+          "correct": true,
+          "confidence": 0.9280761
+        }
+      },
+      "response": {
+        "model": "respan/span-01-lite-20260925",
+        "answers": {
+          "performer": {
+            "type": "choice",
+            "choice": "insufficient_evidence",
+            "probabilities": {
+              "pmkt_frontend": 0.36789683,
+              "pmkt_core": 0.60423696,
+              "insufficient_evidence": 0.8651335
+            }
+          },
+          "evidence": {
+            "type": "choice",
+            "choice": "verb",
+            "probabilities": {
+              "object": 0.33212203,
+              "verb": 0.62345356,
+              "context": 0.10044321
+            }
+          },
+          "mixed_lanes": {
+            "type": "noul",
+            "noul": 0.9280761
+          }
+        },
+        "usage": {
+          "input_tokens": 1649,
+          "output_tokens": 0,
+          "cost": 0
+        },
+        "id": "gen-dec-1790839275-hTuZffIwbiC4EvdZJ58M",
+        "provider": "Respan"
+      }
+    },
+    {
+      "raw_number": 158,
+      "sample_id": "T15-158",
+      "http_status": 200,
+      "fields": {
+        "performer": {
+          "predicted": "insufficient_evidence",
+          "expected": "vcb_mobile",
+          "correct": false,
+          "confidence": 0.8830771
+        },
+        "evidence": {
+          "predicted": "object",
+          "expected": "verb",
+          "correct": false,
+          "confidence": 0.79114956
+        },
+        "mixed_lanes": {
+          "predicted": false,
+          "expected": false,
+          "correct": true,
+          "confidence": 0.88833367
+        }
+      },
+      "response": {
+        "model": "respan/span-01-lite-20260925",
+        "answers": {
+          "performer": {
+            "type": "choice",
+            "choice": "insufficient_evidence",
+            "probabilities": {
+              "vcb_mobile": 0.2651988,
+              "vcb_server": 0.16393556,
+              "insufficient_evidence": 0.8830771
+            }
+          },
+          "evidence": {
+            "type": "choice",
+            "choice": "object",
+            "probabilities": {
+              "object": 0.79114956,
+              "verb": 0.7131667,
+              "context": 0.19970368
+            }
+          },
+          "mixed_lanes": {
+            "type": "noul",
+            "noul": 0.11166633
+          }
+        },
+        "usage": {
+          "input_tokens": 1623,
+          "output_tokens": 0,
+          "cost": 0
+        },
+        "id": "gen-dec-1790839279-CFjpk7eKA0WxnYkXl0zJ",
+        "provider": "Respan"
+      }
+    },
+    {
+      "raw_number": 159,
+      "sample_id": "T15-159",
+      "http_status": 200,
+      "fields": {
+        "performer": {
+          "predicted": "insufficient_evidence",
+          "expected": "vcb_mobile",
+          "correct": false,
+          "confidence": 0.8663989
+        },
+        "evidence": {
+          "predicted": "object",
+          "expected": "verb",
+          "correct": false,
+          "confidence": 0.71682984
+        },
+        "mixed_lanes": {
+          "predicted": false,
+          "expected": false,
+          "correct": true,
+          "confidence": 0.91159726
+        }
+      },
+      "response": {
+        "model": "respan/span-01-lite-20260925",
+        "answers": {
+          "performer": {
+            "type": "choice",
+            "choice": "insufficient_evidence",
+            "probabilities": {
+              "vcb_mobile": 0.23009357,
+              "vcb_server": 0.1316888,
+              "insufficient_evidence": 0.8663989
+            }
+          },
+          "evidence": {
+            "type": "choice",
+            "choice": "object",
+            "probabilities": {
+              "object": 0.71682984,
+              "verb": 0.6081482,
+              "context": 0.150227
+            }
+          },
+          "mixed_lanes": {
+            "type": "noul",
+            "noul": 0.08840274
+          }
+        },
+        "usage": {
+          "input_tokens": 1551,
+          "output_tokens": 0,
+          "cost": 0
+        },
+        "id": "gen-dec-1790839283-F9AtTLq0lfHCSY58udAY",
+        "provider": "Respan"
+      }
+    },
+    {
+      "raw_number": 160,
+      "sample_id": "T15-160",
+      "http_status": 200,
+      "fields": {
+        "performer": {
+          "predicted": "insufficient_evidence",
+          "expected": "vcb_mobile",
+          "correct": false,
+          "confidence": 0.8670988
+        },
+        "evidence": {
+          "predicted": "object",
+          "expected": "verb",
+          "correct": false,
+          "confidence": 0.73719144
+        },
+        "mixed_lanes": {
+          "predicted": false,
+          "expected": false,
+          "correct": true,
+          "confidence": 0.88982138
+        }
+      },
+      "response": {
+        "model": "respan/span-01-lite-20260925",
+        "answers": {
+          "performer": {
+            "type": "choice",
+            "choice": "insufficient_evidence",
+            "probabilities": {
+              "vcb_mobile": 0.15908875,
+              "vcb_server": 0.13446067,
+              "insufficient_evidence": 0.8670988
+            }
+          },
+          "evidence": {
+            "type": "choice",
+            "choice": "object",
+            "probabilities": {
+              "object": 0.73719144,
+              "verb": 0.39136827,
+              "context": 0.09903472
+            }
+          },
+          "mixed_lanes": {
+            "type": "noul",
+            "noul": 0.11017862
+          }
+        },
+        "usage": {
+          "input_tokens": 1690,
+          "output_tokens": 0,
+          "cost": 0
+        },
+        "id": "gen-dec-1790839287-OUB1pa2UJQvO6lgnTSdx",
+        "provider": "Respan"
+      }
+    }
+  ]
+}

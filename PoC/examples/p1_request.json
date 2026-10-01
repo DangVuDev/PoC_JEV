@@ -1,5 +1,5 @@
 {
-  "service_platform": "laya",
+  "service_platform": "openrouter",
   "input_json": {
     "clause_text": "Là tài khoản có trạng thái hoạt động, không bị khóa ghi nợ, không đồng sở hữu và không có người giám hộ.",
     "left_condition": "có trạng thái hoạt động",

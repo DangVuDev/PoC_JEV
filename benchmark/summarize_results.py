@@ -42,14 +42,49 @@ def find_gaps(segments: list[dict[str, Any]]) -> list[tuple[int, int]]:
     return gaps
 
 
-def merge_summary(segments: list[dict[str, Any]]) -> dict[str, dict[str, Any]]:
-    """Gop summary tung field tu nhieu segment thanh 1 summary chung, cong don scored/correct."""
-    merged: dict[str, dict[str, int]] = {}
+def dedupe_samples_by_raw_number(segments: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """Nếu 2 file có đoạn chồng lấn (vd result_51_60 và result_51_70), giữ lại bản ghi
+    của file xuất hiện SAU trong danh sách (sort theo tên file = sort theo thời gian tạo
+    gần đúng do đặt tên result_<from>_<to>), để báo cáo không đếm trùng 1 dòng CSV 2 lần."""
+    by_raw: dict[int, dict[str, Any]] = {}
     for seg in segments:
-        for field_name, stat in seg.get("summary", {}).items():
+        for sample in seg.get("samples", []):
+            by_raw[sample["raw_number"]] = sample
+    return [by_raw[n] for n in sorted(by_raw)]
+
+
+def find_overlaps(segments: list[dict[str, Any]]) -> list[tuple[str, str, int, int]]:
+    """Danh sách (file_a, file_b, from, to) các khoảng dòng bị khai báo trong > 1 file."""
+    counted: dict[int, list[str]] = {}
+    for seg in segments:
+        for n in range(seg["from_raw"], seg["to_raw"] + 1):
+            counted.setdefault(n, []).append(seg["path"])
+    overlapping_lines = sorted(n for n, files in counted.items() if len(files) > 1)
+
+    overlaps: list[tuple[str, str, int, int]] = []
+    i = 0
+    while i < len(overlapping_lines):
+        start = overlapping_lines[i]
+        end = start
+        while i + 1 < len(overlapping_lines) and overlapping_lines[i + 1] == end + 1:
+            i += 1
+            end = overlapping_lines[i]
+        files = sorted(set(counted[start]))
+        overlaps.append((", ".join(files), "", start, end))
+        i += 1
+    return overlaps
+
+
+def merge_summary(samples: list[dict[str, Any]]) -> dict[str, dict[str, Any]]:
+    """Tính summary tổng hợp trực tiếp từ danh sách mẫu ĐÃ khử trùng lặp theo raw_number."""
+    merged: dict[str, dict[str, int]] = {}
+    for sample in samples:
+        for field_name, field in sample.get("fields", {}).items():
+            if field.get("correct") is None:
+                continue
             bucket = merged.setdefault(field_name, {"scored": 0, "correct": 0})
-            bucket["scored"] += stat["scored"]
-            bucket["correct"] += stat["correct"]
+            bucket["scored"] += 1
+            bucket["correct"] += 1 if field["correct"] else 0
     result = {}
     for field_name, bucket in merged.items():
         accuracy = (bucket["correct"] / bucket["scored"]) if bucket["scored"] else None
@@ -57,28 +92,25 @@ def merge_summary(segments: list[dict[str, Any]]) -> dict[str, dict[str, Any]]:
     return result
 
 
-def collect_errors(segments: list[dict[str, Any]]) -> list[dict[str, Any]]:
-    errors = []
-    for seg in segments:
-        for sample in seg.get("samples", []):
-            if sample.get("http_status") != 200:
-                errors.append({"raw_number": sample["raw_number"], "sample_id": sample["sample_id"], "error": sample.get("error")})
-    return errors
-
-
-def total_samples(segments: list[dict[str, Any]]) -> int:
-    return sum(seg["count"] for seg in segments)
+def collect_errors(samples: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    return [
+        {"raw_number": s["raw_number"], "sample_id": s["sample_id"], "error": s.get("error")}
+        for s in samples
+        if s.get("http_status") != 200
+    ]
 
 
 def build_markdown(folder: Path, segments: list[dict[str, Any]]) -> str:
     gaps = find_gaps(segments)
-    summary = merge_summary(segments)
-    http_errors = collect_errors(segments)
-    total = total_samples(segments)
+    overlaps = find_overlaps(segments)
+    deduped_samples = dedupe_samples_by_raw_number(segments)
+    summary = merge_summary(deduped_samples)
+    http_errors = collect_errors(deduped_samples)
+    total = len(deduped_samples)
 
     lines = [f"# Bao cao benchmark: {folder.name}", ""]
     lines.append(f"- So file ket qua: {len(segments)}")
-    lines.append(f"- Tong so mau da chay: {total}")
+    lines.append(f"- Tong so mau da chay (da khu trung lap): {total}")
     if segments:
         full_min, full_max = min(s["from_raw"] for s in segments), max(s["to_raw"] for s in segments)
         expected_total = full_max - full_min + 1
@@ -89,6 +121,13 @@ def build_markdown(folder: Path, segments: list[dict[str, Any]]) -> str:
             lines.append(f"- **THIEU {missing_count} dong, chua chay**: {gap_text}")
         else:
             lines.append("- Khong thieu dong nao trong pham vi tren.")
+        if overlaps:
+            lines.append(f"- **CHONG LAP** (da khu trung, giu ban ghi tu file xuat hien sau trong danh sach ten file):")
+            for files, _, a, b in overlaps:
+                rng = f"{a}-{b}" if a != b else str(a)
+                lines.append(f"  - dong {rng}: xuat hien trong {files}")
+        else:
+            lines.append("- Khong co doan nao bi chay trung lap.")
     lines.append(f"- Loi HTTP (khong tra duoc ket qua): {len(http_errors)}")
     lines.append("")
 

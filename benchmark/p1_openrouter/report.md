@@ -1,9 +1,10 @@
 # Bao cao benchmark: p1_openrouter
 
 - So file ket qua: 14
-- Tong so mau da chay: 200
+- Tong so mau da chay (da khu trung lap): 200
 - Pham vi: dong 1 den 200 (200 dong)
 - Khong thieu dong nao trong pham vi tren.
+- Khong co doan nao bi chay trung lap.
 - Loi HTTP (khong tra duoc ket qua): 0
 
 ## Accuracy tong hop
