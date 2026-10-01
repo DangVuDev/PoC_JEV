@@ -1,0 +1,8 @@
+{
+  "service_platform": "laya",
+  "input_json": {
+    "clause_text": "Là tài khoản có trạng thái hoạt động, không bị khóa ghi nợ, không đồng sở hữu và không có người giám hộ.",
+    "left_condition": "có trạng thái hoạt động",
+    "right_condition": "không bị khóa ghi nợ"
+  }
+}

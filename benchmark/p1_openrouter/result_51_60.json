@@ -1,0 +1,356 @@
+{
+  "service_platform": "openrouter",
+  "csv": "D:\\AI\\JEV\\p1_condition_relation_poc_200_1.csv",
+  "from_raw": 51,
+  "to_raw": 60,
+  "count": 10,
+  "summary": {
+    "relation": {
+      "scored": 10,
+      "correct": 0,
+      "accuracy": 0.0
+    }
+  },
+  "samples": [
+    {
+      "raw_number": 51,
+      "sample_id": "CR-013P",
+      "http_status": 200,
+      "fields": {
+        "relation": {
+          "predicted": "insufficient_evidence",
+          "expected": "and",
+          "correct": false,
+          "confidence": 0.8601635
+        }
+      },
+      "response": {
+        "model": "respan/span-01-lite-20260925",
+        "answers": {
+          "relation": {
+            "type": "choice",
+            "choice": "insufficient_evidence",
+            "probabilities": {
+              "and": 0.8141216,
+              "or": 0.11087497,
+              "insufficient_evidence": 0.8601635
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 754,
+          "output_tokens": 0,
+          "cost": 0
+        },
+        "id": "gen-dec-1790827668-UngkBypD4SnC3WBs2MQz",
+        "provider": "Respan"
+      }
+    },
+    {
+      "raw_number": 52,
+      "sample_id": "CR-013F",
+      "http_status": 200,
+      "fields": {
+        "relation": {
+          "predicted": "insufficient_evidence",
+          "expected": "or",
+          "correct": false,
+          "confidence": 0.89002323
+        }
+      },
+      "response": {
+        "model": "respan/span-01-lite-20260925",
+        "answers": {
+          "relation": {
+            "type": "choice",
+            "choice": "insufficient_evidence",
+            "probabilities": {
+              "and": 0.39436126,
+              "or": 0.31784612,
+              "insufficient_evidence": 0.89002323
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 752,
+          "output_tokens": 0,
+          "cost": 0
+        },
+        "id": "gen-dec-1790827669-EKsHhfhT8zDwI40wyJTh",
+        "provider": "Respan"
+      }
+    },
+    {
+      "raw_number": 53,
+      "sample_id": "CR-014",
+      "http_status": 200,
+      "fields": {
+        "relation": {
+          "predicted": "insufficient_evidence",
+          "expected": "and",
+          "correct": false,
+          "confidence": 0.8834517
+        }
+      },
+      "response": {
+        "model": "respan/span-01-lite-20260925",
+        "answers": {
+          "relation": {
+            "type": "choice",
+            "choice": "insufficient_evidence",
+            "probabilities": {
+              "and": 0.8349344,
+              "or": 0.10847539,
+              "insufficient_evidence": 0.8834517
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 911,
+          "output_tokens": 0,
+          "cost": 0
+        },
+        "id": "gen-dec-1790827670-egTysoZLSaSBNSzA0eMz",
+        "provider": "Respan"
+      }
+    },
+    {
+      "raw_number": 54,
+      "sample_id": "CR-014S",
+      "http_status": 200,
+      "fields": {
+        "relation": {
+          "predicted": "insufficient_evidence",
+          "expected": "and",
+          "correct": false,
+          "confidence": 0.86479115
+        }
+      },
+      "response": {
+        "model": "respan/span-01-lite-20260925",
+        "answers": {
+          "relation": {
+            "type": "choice",
+            "choice": "insufficient_evidence",
+            "probabilities": {
+              "and": 0.6373591,
+              "or": 0.080000654,
+              "insufficient_evidence": 0.86479115
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 752,
+          "output_tokens": 0,
+          "cost": 0
+        },
+        "id": "gen-dec-1790827671-1ZIEamqRbAzovUTLeBkw",
+        "provider": "Respan"
+      }
+    },
+    {
+      "raw_number": 55,
+      "sample_id": "CR-014P",
+      "http_status": 200,
+      "fields": {
+        "relation": {
+          "predicted": "insufficient_evidence",
+          "expected": "and",
+          "correct": false,
+          "confidence": 0.8572816
+        }
+      },
+      "response": {
+        "model": "respan/span-01-lite-20260925",
+        "answers": {
+          "relation": {
+            "type": "choice",
+            "choice": "insufficient_evidence",
+            "probabilities": {
+              "and": 0.43109718,
+              "or": 0.1024558,
+              "insufficient_evidence": 0.8572816
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 754,
+          "output_tokens": 0,
+          "cost": 0
+        },
+        "id": "gen-dec-1790827672-2Npqp08bVFxFbDhTw2o0",
+        "provider": "Respan"
+      }
+    },
+    {
+      "raw_number": 56,
+      "sample_id": "CR-014F",
+      "http_status": 200,
+      "fields": {
+        "relation": {
+          "predicted": "insufficient_evidence",
+          "expected": "or",
+          "correct": false,
+          "confidence": 0.8734999
+        }
+      },
+      "response": {
+        "model": "respan/span-01-lite-20260925",
+        "answers": {
+          "relation": {
+            "type": "choice",
+            "choice": "insufficient_evidence",
+            "probabilities": {
+              "and": 0.31435362,
+              "or": 0.16034652,
+              "insufficient_evidence": 0.8734999
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 752,
+          "output_tokens": 0,
+          "cost": 0
+        },
+        "id": "gen-dec-1790827673-2xDpO6bmh25sochjcy40",
+        "provider": "Respan"
+      }
+    },
+    {
+      "raw_number": 57,
+      "sample_id": "CR-015",
+      "http_status": 200,
+      "fields": {
+        "relation": {
+          "predicted": "insufficient_evidence",
+          "expected": "or",
+          "correct": false,
+          "confidence": 0.8179739
+        }
+      },
+      "response": {
+        "model": "respan/span-01-lite-20260925",
+        "answers": {
+          "relation": {
+            "type": "choice",
+            "choice": "insufficient_evidence",
+            "probabilities": {
+              "and": 0.36353275,
+              "or": 0.14046676,
+              "insufficient_evidence": 0.8179739
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 790,
+          "output_tokens": 0,
+          "cost": 0
+        },
+        "id": "gen-dec-1790827674-EKpG6zUWenVgUnp8TEDV",
+        "provider": "Respan"
+      }
+    },
+    {
+      "raw_number": 58,
+      "sample_id": "CR-015S",
+      "http_status": 200,
+      "fields": {
+        "relation": {
+          "predicted": "insufficient_evidence",
+          "expected": "or",
+          "correct": false,
+          "confidence": 0.77765924
+        }
+      },
+      "response": {
+        "model": "respan/span-01-lite-20260925",
+        "answers": {
+          "relation": {
+            "type": "choice",
+            "choice": "insufficient_evidence",
+            "probabilities": {
+              "and": 0.47695282,
+              "or": 0.32621905,
+              "insufficient_evidence": 0.77765924
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 767,
+          "output_tokens": 0,
+          "cost": 0
+        },
+        "id": "gen-dec-1790827675-8gOWFKohWhxA6UUOlTAa",
+        "provider": "Respan"
+      }
+    },
+    {
+      "raw_number": 59,
+      "sample_id": "CR-015P",
+      "http_status": 200,
+      "fields": {
+        "relation": {
+          "predicted": "insufficient_evidence",
+          "expected": "or",
+          "correct": false,
+          "confidence": 0.8539887
+        }
+      },
+      "response": {
+        "model": "respan/span-01-lite-20260925",
+        "answers": {
+          "relation": {
+            "type": "choice",
+            "choice": "insufficient_evidence",
+            "probabilities": {
+              "and": 0.51173127,
+              "or": 0.45711347,
+              "insufficient_evidence": 0.8539887
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 767,
+          "output_tokens": 0,
+          "cost": 0
+        },
+        "id": "gen-dec-1790827676-LSGyLpLMBX0FiLCvsV21",
+        "provider": "Respan"
+      }
+    },
+    {
+      "raw_number": 60,
+      "sample_id": "CR-015F",
+      "http_status": 200,
+      "fields": {
+        "relation": {
+          "predicted": "insufficient_evidence",
+          "expected": "and",
+          "correct": false,
+          "confidence": 0.8010082
+        }
+      },
+      "response": {
+        "model": "respan/span-01-lite-20260925",
+        "answers": {
+          "relation": {
+            "type": "choice",
+            "choice": "insufficient_evidence",
+            "probabilities": {
+              "and": 0.6072346,
+              "or": 0.100088455,
+              "insufficient_evidence": 0.8010082
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 766,
+          "output_tokens": 0,
+          "cost": 0
+        },
+        "id": "gen-dec-1790827678-hNebui9AqkfYy58oNWsr",
+        "provider": "Respan"
+      }
+    }
+  ]
+}

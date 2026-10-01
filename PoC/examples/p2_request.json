@@ -1,0 +1,13 @@
+{
+  "service_platform": "openrouter",
+  "input_json": {
+    "row_text": "Mở webview ID Safe",
+    "subject": {"text": "Hệ thống", "resolution": "generic"},
+    "substeps": [{"step_key": "4c491ddfa373:6", "quote": "Mở webview ID Safe", "operation": null, "object_labels": []}],
+    "members": [
+      {"id": "pmkt_frontend", "name": "PMKT (Front-end)", "tier": "client", "description": "Giao diện website và các màn hình nghiệp vụ cho người dùng"},
+      {"id": "pmkt_core", "name": "PMKT (Core)", "tier": "server", "description": "Xử lý logic nghiệp vụ, lưu dữ liệu, hạch toán và tích hợp"}
+    ],
+    "hints": {}
+  }
+}
