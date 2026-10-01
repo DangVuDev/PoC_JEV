@@ -1,13 +1,13 @@
 python benchmark_p1.py `
---service_platform openrouter `
---from_raw 181 `
+--service_platform typesafe `
+--from_raw 21 `
 --to_raw 200 `
---output_folder p1_openrouter
+--output_folder p1_typesafe
 
 
 python benchmark_p2.py `
---service_platform openrouter `
---from_raw 161 `
---to_raw 180 `
---output_folder p2_openrouter `
+--service_platform typesafe `
+--from_raw 1 `
+--to_raw 200 `
+--output_folder p2_typesafe `
 --delay_s 1

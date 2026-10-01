@@ -116,7 +116,7 @@ PoC/
 |---|---|
 | `laya` | Đã kiểm chứng, chạy qua `laya-serve` tự host |
 | `openrouter` (model `respan/span-01-lite:free`) | Đã kiểm chứng, cần `DECISION_OPENROUTER_API_KEY` |
-| `typesafe` | Chưa kiểm chứng endpoint thật |
+| `typesafe` (model `jev-latest`) | Đã kiểm chứng, cần `DECISION_TYPESAFE_ENDPOINT` và `DECISION_TYPESAFE_API_KEY` |
 | `vercelgateway` | Chưa kiểm chứng có hỗ trợ API decisions chuẩn Jev hay không |
 
 Xem mục 10 của [BA_decision_pipeline.md](docs/BA_decision_pipeline.md) để biết các câu hỏi còn mở.

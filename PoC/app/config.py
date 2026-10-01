@@ -45,11 +45,11 @@ _BUILTIN_DEFAULTS: dict[str, dict] = {
     },
     "typesafe": {
         "endpoint": "",
-        "default_model": "jev-1.13",
+        "default_model": "jev-latest",
         "adapter": "jev_native",
         "state_format": "string",
         "auth_required": True,
-        "verified": False,
+        "verified": True,
         "timeout_s": 60.0,
         "min_interval_s": 0.5,
         "max_retries": 3,

@@ -226,11 +226,13 @@ Quy ước tên: `DECISION_<PROVIDER>_<THUỘC_TÍNH>` (xem `PoC/.env.example`).
 | | Laya | OpenRouter (Respan) | TypeSafe Jev | Vercel Gateway |
 |---|---|---|---|---|
 | Adapter mặc định | `jev_native` | `noul_decomposition` | `jev_native` | `jev_native` |
-| `state` | chuỗi / object ✅ | chỉ chuỗi ✅ | cần xác minh | cần xác minh |
-| `choice` / `score` | có ✅ | **không** ✅ | cần xác minh | cần xác minh |
-| `noul` criteria `{true,false}` | ✅ | ✅ | cần xác minh | cần xác minh |
+| `state` | chuỗi / object ✅ | chỉ chuỗi ✅ | chuỗi ✅ | cần xác minh |
+| `choice` / `score` | có ✅ | **không** ✅ | `choice` ✅ (`score` chưa thử) | cần xác minh |
+| `noul` criteria `{true,false}` | ✅ | ✅ | ✅ | cần xác minh |
 
 ✅ = đã kiểm chứng bằng request thật hoặc mã nguồn.
+
+Ghi chú TypeSafe (kiểm chứng 2026-10-01): endpoint `https://api.typesafe.ai/v1/systemone`, xác thực `Bearer`. Danh sách model lấy được từ `GET /v1/models` chỉ có `jev-latest` và `jev-preview`; tên `jev-1.13` bị từ chối với lỗi `Unknown model`. `jev-latest` hiện trỏ tới phiên bản `jev-1.13.0` (trường `model` trong response). Response không có `answer_confidence`; `confidence` theo định nghĩa của TypeSafe nên khác `max(probabilities)`. `probabilities` của câu `choice` cộng lại bằng 1, `usage.output_tokens` khác 0.
 
 ### 5.3 Adapter
 - **`jev_native`**: gửi nguyên câu hỏi.
@@ -318,7 +320,7 @@ Kết quả từng mẫu được ghi vào `PoC/runs/<task>_<provider>_<thời g
 
 | # | Câu hỏi | Đề xuất |
 |---|---|---|
-| Q1 | Endpoint, cách xác thực và schema thật của **TypeSafe Jev** | Lấy tài liệu hoặc key, gửi 1 request thật, rồi điền bảng 5.2 |
+| Q1 | ~~Endpoint, cách xác thực và schema thật của **TypeSafe Jev**~~ Đã giải quyết 2026-10-01 (xem ghi chú dưới bảng 5.2). Còn lại: `score` chưa thử | Thử khi có bài toán dùng `score` |
 | Q2 | **Vercel AI Gateway** có API decisions chuẩn Jev hay chỉ có chat completions? | Nếu chỉ có chat thì đây là một hạng mục riêng, không cấu hình thẳng được |
 | Q3 | Qua OpenRouter, mỗi model có năng lực khác nhau (Respan chỉ `noul`, các model khác có thể hỗ trợ `choice`) | Hiện đổi `DECISION_OPENROUTER_ADAPTER` cùng lúc với `DEFAULT_MODEL`. Nếu cần dùng nhiều model song song thì khai báo thành nhiều provider (ví dụ `openrouter-respan`, `openrouter-jev`) |
 | Q4 | Chất lượng mô hình trên dữ liệu thật đang thấp | API này để đổi provider nhanh và so sánh công bằng, không phải cam kết chất lượng |

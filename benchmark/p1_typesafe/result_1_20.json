@@ -1,0 +1,656 @@
+{
+  "service_platform": "typesafe",
+  "csv": "D:\\AI\\JEV\\p1_condition_relation_poc_200_1.csv",
+  "from_raw": 1,
+  "to_raw": 20,
+  "count": 20,
+  "summary": {
+    "relation": {
+      "scored": 20,
+      "correct": 20,
+      "accuracy": 1.0
+    }
+  },
+  "samples": [
+    {
+      "raw_number": 1,
+      "sample_id": "CR-001",
+      "http_status": 200,
+      "fields": {
+        "relation": {
+          "predicted": "and",
+          "expected": "and",
+          "correct": true,
+          "confidence": 1.0
+        }
+      },
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "relation": {
+            "type": "choice",
+            "choice": "and",
+            "confidence": 1.0,
+            "probabilities": {
+              "insufficient_evidence": 0.0,
+              "and": 1.0,
+              "or": 0.0
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 459,
+          "output_tokens": 44
+        }
+      }
+    },
+    {
+      "raw_number": 2,
+      "sample_id": "CR-001S",
+      "http_status": 200,
+      "fields": {
+        "relation": {
+          "predicted": "and",
+          "expected": "and",
+          "correct": true,
+          "confidence": 1.0
+        }
+      },
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "relation": {
+            "type": "choice",
+            "choice": "and",
+            "confidence": 1.0,
+            "probabilities": {
+              "and": 1.0,
+              "insufficient_evidence": 0.0,
+              "or": 0.0
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 444,
+          "output_tokens": 44
+        }
+      }
+    },
+    {
+      "raw_number": 3,
+      "sample_id": "CR-001P",
+      "http_status": 200,
+      "fields": {
+        "relation": {
+          "predicted": "and",
+          "expected": "and",
+          "correct": true,
+          "confidence": 1.0
+        }
+      },
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "relation": {
+            "type": "choice",
+            "choice": "and",
+            "confidence": 1.0,
+            "probabilities": {
+              "or": 0.0,
+              "insufficient_evidence": 0.0,
+              "and": 1.0
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 445,
+          "output_tokens": 44
+        }
+      }
+    },
+    {
+      "raw_number": 4,
+      "sample_id": "CR-001F",
+      "http_status": 200,
+      "fields": {
+        "relation": {
+          "predicted": "or",
+          "expected": "or",
+          "correct": true,
+          "confidence": 0.87
+        }
+      },
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "relation": {
+            "type": "choice",
+            "choice": "or",
+            "confidence": 0.8,
+            "probabilities": {
+              "or": 0.87,
+              "insufficient_evidence": 0.01,
+              "and": 0.12
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 444,
+          "output_tokens": 44
+        }
+      }
+    },
+    {
+      "raw_number": 5,
+      "sample_id": "CR-002",
+      "http_status": 200,
+      "fields": {
+        "relation": {
+          "predicted": "and",
+          "expected": "and",
+          "correct": true,
+          "confidence": 1.0
+        }
+      },
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "relation": {
+            "type": "choice",
+            "choice": "and",
+            "confidence": 1.0,
+            "probabilities": {
+              "and": 1.0,
+              "insufficient_evidence": 0.0,
+              "or": 0.0
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 458,
+          "output_tokens": 44
+        }
+      }
+    },
+    {
+      "raw_number": 6,
+      "sample_id": "CR-002S",
+      "http_status": 200,
+      "fields": {
+        "relation": {
+          "predicted": "and",
+          "expected": "and",
+          "correct": true,
+          "confidence": 0.95
+        }
+      },
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "relation": {
+            "type": "choice",
+            "choice": "and",
+            "confidence": 0.93,
+            "probabilities": {
+              "or": 0.03,
+              "and": 0.95,
+              "insufficient_evidence": 0.02
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 442,
+          "output_tokens": 44
+        }
+      }
+    },
+    {
+      "raw_number": 7,
+      "sample_id": "CR-002P",
+      "http_status": 200,
+      "fields": {
+        "relation": {
+          "predicted": "and",
+          "expected": "and",
+          "correct": true,
+          "confidence": 0.99
+        }
+      },
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "relation": {
+            "type": "choice",
+            "choice": "and",
+            "confidence": 0.98,
+            "probabilities": {
+              "insufficient_evidence": 0.0,
+              "and": 0.99,
+              "or": 0.01
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 443,
+          "output_tokens": 44
+        }
+      }
+    },
+    {
+      "raw_number": 8,
+      "sample_id": "CR-002F",
+      "http_status": 200,
+      "fields": {
+        "relation": {
+          "predicted": "or",
+          "expected": "or",
+          "correct": true,
+          "confidence": 0.86
+        }
+      },
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "relation": {
+            "type": "choice",
+            "choice": "or",
+            "confidence": 0.79,
+            "probabilities": {
+              "or": 0.86,
+              "insufficient_evidence": 0.01,
+              "and": 0.13
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 442,
+          "output_tokens": 44
+        }
+      }
+    },
+    {
+      "raw_number": 9,
+      "sample_id": "CR-003",
+      "http_status": 200,
+      "fields": {
+        "relation": {
+          "predicted": "and",
+          "expected": "and",
+          "correct": true,
+          "confidence": 1.0
+        }
+      },
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "relation": {
+            "type": "choice",
+            "choice": "and",
+            "confidence": 1.0,
+            "probabilities": {
+              "or": 0.0,
+              "insufficient_evidence": 0.0,
+              "and": 1.0
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 458,
+          "output_tokens": 44
+        }
+      }
+    },
+    {
+      "raw_number": 10,
+      "sample_id": "CR-003S",
+      "http_status": 200,
+      "fields": {
+        "relation": {
+          "predicted": "and",
+          "expected": "and",
+          "correct": true,
+          "confidence": 0.99
+        }
+      },
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "relation": {
+            "type": "choice",
+            "choice": "and",
+            "confidence": 0.98,
+            "probabilities": {
+              "insufficient_evidence": 0.0,
+              "and": 0.99,
+              "or": 0.01
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 442,
+          "output_tokens": 44
+        }
+      }
+    },
+    {
+      "raw_number": 11,
+      "sample_id": "CR-003P",
+      "http_status": 200,
+      "fields": {
+        "relation": {
+          "predicted": "and",
+          "expected": "and",
+          "correct": true,
+          "confidence": 0.95
+        }
+      },
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "relation": {
+            "type": "choice",
+            "choice": "and",
+            "confidence": 0.94,
+            "probabilities": {
+              "and": 0.95,
+              "insufficient_evidence": 0.02,
+              "or": 0.03
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 443,
+          "output_tokens": 44
+        }
+      }
+    },
+    {
+      "raw_number": 12,
+      "sample_id": "CR-003F",
+      "http_status": 200,
+      "fields": {
+        "relation": {
+          "predicted": "or",
+          "expected": "or",
+          "correct": true,
+          "confidence": 0.96
+        }
+      },
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "relation": {
+            "type": "choice",
+            "choice": "or",
+            "confidence": 0.95,
+            "probabilities": {
+              "and": 0.03,
+              "insufficient_evidence": 0.01,
+              "or": 0.96
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 442,
+          "output_tokens": 44
+        }
+      }
+    },
+    {
+      "raw_number": 13,
+      "sample_id": "CR-004",
+      "http_status": 200,
+      "fields": {
+        "relation": {
+          "predicted": "and",
+          "expected": "and",
+          "correct": true,
+          "confidence": 1.0
+        }
+      },
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "relation": {
+            "type": "choice",
+            "choice": "and",
+            "confidence": 1.0,
+            "probabilities": {
+              "insufficient_evidence": 0.0,
+              "or": 0.0,
+              "and": 1.0
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 457,
+          "output_tokens": 44
+        }
+      }
+    },
+    {
+      "raw_number": 14,
+      "sample_id": "CR-004S",
+      "http_status": 200,
+      "fields": {
+        "relation": {
+          "predicted": "and",
+          "expected": "and",
+          "correct": true,
+          "confidence": 0.99
+        }
+      },
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "relation": {
+            "type": "choice",
+            "choice": "and",
+            "confidence": 0.98,
+            "probabilities": {
+              "insufficient_evidence": 0.01,
+              "and": 0.99,
+              "or": 0.0
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 442,
+          "output_tokens": 44
+        }
+      }
+    },
+    {
+      "raw_number": 15,
+      "sample_id": "CR-004P",
+      "http_status": 200,
+      "fields": {
+        "relation": {
+          "predicted": "and",
+          "expected": "and",
+          "correct": true,
+          "confidence": 1.0
+        }
+      },
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "relation": {
+            "type": "choice",
+            "choice": "and",
+            "confidence": 1.0,
+            "probabilities": {
+              "or": 0.0,
+              "and": 1.0,
+              "insufficient_evidence": 0.0
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 443,
+          "output_tokens": 44
+        }
+      }
+    },
+    {
+      "raw_number": 16,
+      "sample_id": "CR-004F",
+      "http_status": 200,
+      "fields": {
+        "relation": {
+          "predicted": "or",
+          "expected": "or",
+          "correct": true,
+          "confidence": 0.95
+        }
+      },
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "relation": {
+            "type": "choice",
+            "choice": "or",
+            "confidence": 0.92,
+            "probabilities": {
+              "or": 0.95,
+              "insufficient_evidence": 0.01,
+              "and": 0.04
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 442,
+          "output_tokens": 44
+        }
+      }
+    },
+    {
+      "raw_number": 17,
+      "sample_id": "CR-005",
+      "http_status": 200,
+      "fields": {
+        "relation": {
+          "predicted": "and",
+          "expected": "and",
+          "correct": true,
+          "confidence": 1.0
+        }
+      },
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "relation": {
+            "type": "choice",
+            "choice": "and",
+            "confidence": 1.0,
+            "probabilities": {
+              "or": 0.0,
+              "and": 1.0,
+              "insufficient_evidence": 0.0
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 456,
+          "output_tokens": 44
+        }
+      }
+    },
+    {
+      "raw_number": 18,
+      "sample_id": "CR-005S",
+      "http_status": 200,
+      "fields": {
+        "relation": {
+          "predicted": "and",
+          "expected": "and",
+          "correct": true,
+          "confidence": 0.96
+        }
+      },
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "relation": {
+            "type": "choice",
+            "choice": "and",
+            "confidence": 0.95,
+            "probabilities": {
+              "insufficient_evidence": 0.02,
+              "or": 0.02,
+              "and": 0.96
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 440,
+          "output_tokens": 44
+        }
+      }
+    },
+    {
+      "raw_number": 19,
+      "sample_id": "CR-005P",
+      "http_status": 200,
+      "fields": {
+        "relation": {
+          "predicted": "and",
+          "expected": "and",
+          "correct": true,
+          "confidence": 0.98
+        }
+      },
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "relation": {
+            "type": "choice",
+            "choice": "and",
+            "confidence": 0.96,
+            "probabilities": {
+              "or": 0.02,
+              "and": 0.98,
+              "insufficient_evidence": 0.0
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 441,
+          "output_tokens": 44
+        }
+      }
+    },
+    {
+      "raw_number": 20,
+      "sample_id": "CR-005F",
+      "http_status": 200,
+      "fields": {
+        "relation": {
+          "predicted": "or",
+          "expected": "or",
+          "correct": true,
+          "confidence": 0.91
+        }
+      },
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "relation": {
+            "type": "choice",
+            "choice": "or",
+            "confidence": 0.86,
+            "probabilities": {
+              "insufficient_evidence": 0.01,
+              "and": 0.08,
+              "or": 0.91
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 440,
+          "output_tokens": 44
+        }
+      }
+    }
+  ]
+}
